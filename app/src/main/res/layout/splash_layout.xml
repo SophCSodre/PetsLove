@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/animal" />
+
+    <TextView
+        android:id="@+id/txtTextoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto a"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtTextoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto b"
+        android:textColor="#FB1212"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtTextoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto c"
+        android:textColor="#28A107"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+            android:layout_below="@+id/txtTextoB"
+            android:layout_toRightOf="@+id/txtTextoC"
+        android:id="@+id/txtTextoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto d"
+        android:textColor="#102CE3"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
