@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/logo"
-    android:layout_margin="5dp"
+    android:layout_margin="2dp"
     tools:context=".ComponenteActivity">
 
     <LinearLayout
@@ -17,25 +17,62 @@
         android:background="#9A7A5CCA">
 
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borda"
+            android:drawableRight="@drawable/ic_baseline_alternate_email"
+            android:hint="@string/insira_seu_e_mail"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-        android:background="@drawable/borda"
-        android:drawableRight="@drawable/ic_baseline_alternate_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/insira_seu_e_mail"
-        android:inputType="textEmailAddress"
-        android:maxLength="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borda"
+            android:drawableRight="@drawable/ic_baseline_lock"
+            android:hint="@string/insira_sua_senha"
+            android:inputType="textPassword"
+            android:maxLength="100"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconContentDescription="Insira seu email"
+            app:startIconDrawable="@drawable/ic_baseline_alternate_email"
+            app:endIconMode="clear_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:startIconContentDescription="Insira sua senha"
+            app:startIconDrawable="@drawable/ic_baseline_lock"
+            app:endIconMode="clear_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            app:icon="@drawable/ic_baseline_lock"
+            style="@style/Widget.MaterialComponents.Button"
         />
 
-        <EditText
-        android:background= "@drawable/borda"
-        android:drawableRight="@drawable/ic_baseline_lock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/insira_sua_senha"
-        android:inputType="textPassword"
-        android:maxLength="100"
-        />
     </LinearLayout>
 </LinearLayout>
